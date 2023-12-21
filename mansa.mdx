@@ -1,0 +1,89 @@
+---
+title: Mansa
+description: "One-click setup for APIs"
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/hero-light.svg"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark.svg"
+  alt="Hero Dark"
+/>
+
+Mansa allows developers to....
+
+## How it works
+
+### 1. Run the command
+
+```bash
+npx mansa install trigger.dev
+```
+
+Running this command will first gather metadata about the current repository such as:
+
+      - The language the repository is written in i.e `ts`, `js`
+      - The runtime used in the repository. i.e `node`, `bun`, `deno`
+      - The frameworks used e.g `next.js`, `react`, `angular`, `remix` and others...
+      - The repository's primary package manager i.e `npm`, `yarn`, `pnpm` or `bun`
+      - The libraries used to handle major moving parts of the codebase e.g `prisma`, `trpc`, `firebase` ...
+
+Based on this metadata, mansa will then retrieve the relevant information from the documentation and use this information to build an interactive command line tool to complete the current task.
+
+<Frame caption="Building the CLI tool">
+  <img
+    src="/images/planning-walkthrough.png"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+<br />
+
+### 2. Interactive walkthrough
+
+Once the command line tool is ready, it will guide the user through each step of setting up trigger.dev in their repository while performing the steps on their behalf.
+Mansa can perform the following actions on behalf of the user:
+
+- Create new files
+- Edit existing files
+- Run commands
+
+<Note>
+  The user will always be prompted for confirmation before any of these actions
+  are executed.
+</Note>
+
+Since the steps of the walkthrough are determined by the API documentation **and** the setup of the current repository,
+the exact steps of the walkthrough and their order will vary. Here's an example:
+
+- This is the first step when you run the command in a `next.js` repository using `yarn`:
+
+<Frame>
+  <img
+    src="/images/install-nextjs-yarn.png"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+- This is the first step when you run the command in a `sveltekit` repository using `pnpm`.
+
+<Frame>
+  <img
+    src="/images/install-svelte-pnpm.png"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+- If mansa couldn't find information on the package manager to use in a `next.js` repository, this might be the first step instead.
+
+<Frame>
+  <img
+    src="/images/install-select-package-manager.png"
+    style={{ borderRadius: "0.5rem" }}
+  />
+</Frame>
+
+Try running [the command](/mansa#2-run-the-command) in the terminal to see the rest of the steps...

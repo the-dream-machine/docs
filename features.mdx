@@ -1,0 +1,62 @@
+---
+title: Features
+description: ""
+---
+
+## Interactive walkthrough
+
+Although mansa focuses on automating the tedious and boring parts of integrating an API, it is still important for the developer to understand how the API works.
+This is why mansa doesn't run through the integration process in the background while the developer watches a loading spinner.
+
+Instead, mansa acts as a guide that explains the purpose of each step making sure the developer understands how all the pieces fit together.
+
+## Agent
+
+Mansa can **create** and **edit** files as well as **run commands** on behalf of the user.
+It can also **search** the whole repository to find relevant files and it can **read** files to make more informed edit suggestions.
+When there are multiple available options to complete a task, mansa will prompt the user to select their preferred option instead of guessing and going down the wrong path.
+
+## Syntax highlighted previews
+
+<Frame>
+  <img
+    className="hidden dark:block"
+    src="/images/features-syntax-highlighting.png"
+    alt="Hero Dark"
+  />
+</Frame>
+
+For each step where the developer needs to `create` or `edit` a file, they will see a preview of the file with highlighted diffs.
+
+This means that the developer can review the code without leaving the walkthrough. When satisfied, the developer can press `enter` to apply the changes and continue with the walkthrough.
+No more copy-pasting code.
+
+## Run commands
+
+<Frame>
+  <img src="/images/run-commands.png" style={{ borderRadius: "0.5rem" }} />
+</Frame>
+
+Mansa can run the necessary terminal commands as part of the walkthrough. It will display the logs and even prompt the developer to retry failed runs.
+
+For commands that are long-running, mansa will copy the command to the clipboard so the developer can run it in a new terminal tab/window.
+
+## Works with any JS framework
+
+Mansa works with all the JS frameworks that are supported by your API.
+
+## Configure on the fly
+
+<Frame>
+  <img className="hidden dark:block" src="/images/features-change-on-fly.png" />
+</Frame>
+
+Sometimes mansa might not get things right, if that happens, you can hit **tab** to request changes and nudge it in the right direction.
+
+## We'll handle your setup and maintenance
+
+Setting up mansa doesn't require any time or effort from your team, we take care of the onboarding, testing and maintenance.
+We also regularly update the installer as you update your API.
+
+We like to work fast and we typically complete the setup in less than **48hrs.**
+You'll receive a message from us once your install command is live!
