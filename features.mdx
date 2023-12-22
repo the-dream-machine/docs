@@ -3,18 +3,18 @@ title: Features
 description: ""
 ---
 
-## Interactive walkthrough
+## Automate the setup
 
-Although mansa focuses on automating the tedious and boring parts of integrating an API, it is still important for the developer to understand how the API works.
-This is why mansa doesn't run through the integration process in the background while the developer watches a loading spinner.
-
-Instead, mansa acts as a guide that explains the purpose of each step making sure the developer understands how all the pieces fit together.
-
-## Agent
-
-Mansa can **create** and **edit** files as well as **run commands** on behalf of the user.
+Mansa can **create** and **edit** files as well as **run commands** on behalf of the developer.
 It can also **search** the whole repository to find relevant files and it can **read** files to make more informed edit suggestions.
-When there are multiple available options to complete a task, mansa will prompt the user to select their preferred option instead of guessing and going down the wrong path.
+
+When there are multiple ways to complete a task, mansa will prompt the developer to select their preferred option instead of guessing and going down the wrong path.
+
+## Easy for developers to use
+
+The command `mansa install ...` is a drop-in replacement for `npm install ...`.
+It fits into the current development workflow without requiring any behavior change.
+There is no extension to install and no sign-up forms to fill. It's the fastest way to install and fully set up an API in any repository.
 
 ## Syntax highlighted previews
 
@@ -28,10 +28,10 @@ When there are multiple available options to complete a task, mansa will prompt 
 
 For each step where the developer needs to `create` or `edit` a file, they will see a preview of the file with highlighted diffs.
 
-This means that the developer can review the code without leaving the walkthrough. When satisfied, the developer can press `enter` to apply the changes and continue with the walkthrough.
+This allows the developer to review the code without leaving the walkthrough. If things look good, the developer can press `enter` to apply the changes and continue with the walkthrough.
 No more copy-pasting code.
 
-## Run commands
+## Logs visibility
 
 <Frame>
   <img src="/images/run-commands.png" style={{ borderRadius: "0.5rem" }} />
@@ -39,19 +39,15 @@ No more copy-pasting code.
 
 Mansa can run the necessary terminal commands as part of the walkthrough. It will display the logs and even prompt the developer to retry failed runs.
 
-For commands that are long-running, mansa will copy the command to the clipboard so the developer can run it in a new terminal tab/window.
+For commands that are long-running, mansa will copy the command to the clipboard so the developer can paste it in a new terminal tab/window.
 
-## Works with any JS framework
-
-Mansa works with all the JS frameworks that are supported by your API.
-
-## Configure on the fly
+## Flexible configuration
 
 <Frame>
   <img className="hidden dark:block" src="/images/features-change-on-fly.png" />
 </Frame>
 
-Sometimes mansa might not get things right, if that happens, you can hit **tab** to request changes and nudge it in the right direction.
+Sometimes, developers may want to tweak a few things just the way they like it. If that's the case, they can hit **tab** to bring up a chat box and request changes before they move on to the next step.
 
 ## We'll handle your setup and maintenance
 

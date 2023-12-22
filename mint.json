@@ -15,15 +15,9 @@
       "to": "#d69e2e"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Sign up",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign up",
+    "url": "https://tally.so/r/wMEoPM"
   },
   "tabs": [],
   "navigation": [
