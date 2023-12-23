@@ -22,7 +22,7 @@
   "tabs": [],
   "navigation": [
     {
-      "group": "Introduction",
+      "group": "",
       "pages": ["mansa", "features", "why-mansa"]
     }
   ],
